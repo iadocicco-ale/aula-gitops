@@ -1,0 +1,14 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: conversao
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/veronez-dev/web-page-deploy.git
+    targetRevision: HEAD
+    path: kustomize
+  destination:
+    namespace: conversao
+    server: https://kubernetes.default.svc
