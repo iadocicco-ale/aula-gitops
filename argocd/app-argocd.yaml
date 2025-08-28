@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/fabricioveronez/aula-gitops.git
+    repoURL: https://github.com/iadocicco-ale/aula-gitops.git
     path: argocd
     targetRevision: HEAD
     directory:

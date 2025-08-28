@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/veronez-dev/web-page-deploy.git
+    repoURL: https://github.com/iadocicco-ale/web-page-deploy.git
     targetRevision: HEAD
     path: kustomize
   destination:
