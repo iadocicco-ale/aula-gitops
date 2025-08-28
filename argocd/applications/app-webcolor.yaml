@@ -19,4 +19,4 @@ spec:
     server: https://kubernetes.default.svc
   info:
     - name: Projeto
-      value: "Curso de GitOps"
+      value: "Curso GitOps"
