@@ -14,6 +14,8 @@ spec:
     directory:
       recurse: true
       include: 'deployment.yaml'
+  syncPolicy:
+    automated: {}
   destination:
     namespace: webcolor
     server: https://kubernetes.default.svc

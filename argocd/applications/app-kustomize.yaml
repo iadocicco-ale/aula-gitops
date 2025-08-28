@@ -9,6 +9,8 @@ spec:
     repoURL: https://github.com/iadocicco-ale/web-page-deploy.git
     targetRevision: HEAD
     path: kustomize
+  syncPolicy:
+    automated: {}
   destination:
     namespace: conversao
     server: https://kubernetes.default.svc
