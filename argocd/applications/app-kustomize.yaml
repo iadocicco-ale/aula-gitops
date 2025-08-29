@@ -10,7 +10,9 @@ spec:
     targetRevision: HEAD
     path: kustomize
   syncPolicy:
-    automated: {}
+    automated:
+      prune: true
+      selfHeal: true
   destination:
     namespace: conversao
     server: https://kubernetes.default.svc

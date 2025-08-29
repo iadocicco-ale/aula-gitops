@@ -15,7 +15,9 @@ spec:
       recurse: true
       include: 'deployment.yaml'
   syncPolicy:
-    automated: {}
+    automated:
+      prune: true
+      selfHeal: true
   destination:
     namespace: webcolor
     server: https://kubernetes.default.svc
