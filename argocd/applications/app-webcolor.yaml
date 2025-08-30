@@ -14,13 +14,20 @@ spec:
     directory:
       recurse: true
       include: 'deployment.yaml'
-  syncPolicy:
-    automated:
-      prune: true
-      selfHeal: true
+#  syncPolicy:
+#    automated:
+#      prune: true
+#      selfHeal: true
   destination:
     namespace: webcolor
     server: https://kubernetes.default.svc
   info:
     - name: Projeto
       value: "Curso GitOps"
+  syncWindows:
+    - kind: allow
+      timeZone: "Europe/Rome"
+      schedule: '0 9 * * *'
+      duration: 12h
+      applications:
+      - '*'
