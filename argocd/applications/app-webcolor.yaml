@@ -18,13 +18,6 @@ spec:
     automated:
       prune: true
       selfHeal: true
-  syncWindows:
-    - kind: allow
-      timeZone: "Europe/Rome"
-      schedulle: '0 9 * * *'
-      duration: 12h
-      applications:
-      - '*'
   destination:
     namespace: webcolor
     server: https://kubernetes.default.svc
