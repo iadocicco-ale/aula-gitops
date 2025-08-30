@@ -1,0 +1,22 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: default
+  namespace: argocd
+spec:
+  description: Projeto padrão com restrição de janela de sync
+  sourceRepos:
+    - '*'
+  destinations:
+    - namespace: '*'
+      server: '*'
+  clusterResourceWhitelist:
+    - group: '*'
+      kind: '*'
+  syncWindows:
+    - kind: allow
+      schedule: "0 9 * * *"   # todo dia às 09:00
+      duration: 12h           # permite sync até 21:00
+      applications:
+        - "*"                 # aplica a todas as Applications deste projeto
+      timeZone: "Europe/Rome" # timezone Itália
