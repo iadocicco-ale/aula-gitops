@@ -24,10 +24,3 @@ spec:
   info:
     - name: Projeto
       value: "Curso GitOps"
-  syncWindows:
-    - kind: allow
-      timeZone: "Europe/Rome"
-      schedule: '0 9 * * *'
-      duration: 12h
-      applications:
-      - '*'
