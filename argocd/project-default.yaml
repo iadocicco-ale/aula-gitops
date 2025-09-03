@@ -16,7 +16,7 @@ spec:
   syncWindows:
     - kind: allow
       schedule: "0 9 * * *"   # todo dia às 09:00
-      duration: 12h           # permite sync até 21:00
+      duration: 13h           # permite sync até 21:00
       applications:
         - "*"                 # aplica a todas as Applications deste projeto
       timeZone: "Europe/Rome" # timezone Itália
